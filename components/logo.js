@@ -10,8 +10,8 @@ export default function Logo() {
           borderRadius='1000px'
           h={7}
         />
-        <Text fontSize='24px' pl={3}>
-          Hello
+        <Text fontSize={{ base: '14px', md: '16px' }} fontWeight='bold' pl={1}>
+          Ray An
         </Text>
       </HStack>
     </Box>
