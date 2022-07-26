@@ -1,24 +1,27 @@
 import { useState, useEffect, useRef } from 'react'
 import { Box, Image, Text } from '@chakra-ui/react'
+import * as THREE from 'three'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 
 const Banner = () => {
   const [vantaEffect, setVantaEffect] = useState(0)
-  const myRef = useRef(null)
+  const vantaRef = useRef(null)
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
         BIRDS({
-          el: myRef.current
+          el: vantaRef.current,
+          THREE,
+          backgroundAlpha: 0.0
         })
       )
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
+      if (vantaEffect) vantaEffect.destory()
     }
   }, [vantaEffect])
   return (
-    <Box ref={myRef} display='flex' justifyContent='center' pt={12}>
+    <Box ref={vantaRef} display='flex' justifyContent='center' pt={12}>
       <Image
         src='/images/banner.png'
         alt='banner'

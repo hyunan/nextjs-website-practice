@@ -73,7 +73,7 @@ const Navbar = () => {
           ml={4}
         >
           <LinkItem href='/projects'>Projects</LinkItem>
-          <LinkItem href='/https://github.com/hyun-an/hyunan'>
+          <LinkItem href='https://github.com/hyun-an/hyunan'>
             <IoLogoGithub style={{ marginRight: '0.5rem' }} />
             Source
           </LinkItem>

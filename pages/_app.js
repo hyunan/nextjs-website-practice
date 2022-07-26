@@ -1,15 +1,27 @@
 import '../styles/globals.css'
+import { useEffect } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
+import Script from 'next/script'
 import theme from '../theme'
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const threeScript = document.createElement('script')
+    threeScript.setAttribute('id', 'threeScript')
+    threeScript.setAttribute(
+      'src',
+      'https://cdnjs.cloudflare.com/ajax/libs/three.js/r140/three.min.js'
+    )
+    document.getElementsByTagName('head')[0].appendChild(threeScript)
+    return () => {
+      if (threeScript) {
+        threeScript.remove()
+      }
+    }
+  }, [])
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
-      <script
-        src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js'
-        async
-      ></script>
     </ChakraProvider>
   )
 }

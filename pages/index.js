@@ -1,6 +1,4 @@
 import { Box } from '@chakra-ui/react'
-import Head from 'next/head'
-import Image from 'next/image'
 import MainContainer from '../components/layouts/main'
 
 export default function Home() {
