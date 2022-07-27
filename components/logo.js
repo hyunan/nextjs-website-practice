@@ -1,8 +1,9 @@
 import { Box, HStack, Image, Text } from '@chakra-ui/react'
+import Link from 'next/link'
 
 export default function Logo() {
   return (
-    <Box>
+    <Link href='/'>
       <HStack>
         <Image
           src='/images/profile.png'
@@ -14,6 +15,6 @@ export default function Logo() {
           Ray An
         </Text>
       </HStack>
-    </Box>
+    </Link>
   )
 }

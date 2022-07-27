@@ -43,7 +43,7 @@ const Navbar = () => {
       as='nav'
       top={0}
       pos='fixed'
-      h={12}
+      h={14}
       bgColor={useColorModeValue(
         'rgba(255, 255, 240, 0.5)',
         'rgba(37, 39, 54, 0.5)'
@@ -51,7 +51,7 @@ const Navbar = () => {
       backdropFilter='auto'
       backdropBlur='2px'
       w='100%'
-      zIndex={2}
+      zIndex={5}
       display='flex'
       alignItems='center'
     >
