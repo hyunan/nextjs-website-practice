@@ -1,4 +1,4 @@
-# Personal Website made with Next.js, Chakra UI and Vercel
+# My Personal Website
 
 _Just fyi the birds don't render on desktop browsers, however changing to mobile view then back to desktop view should bring them back. I'll try to fix this in the near future._
 
