@@ -46,7 +46,7 @@ const Banner = () => {
           pos='absolute'
           w={{ base: '100%', md: 'container.md' }}
           h={{ base: '30vh', md: '578px' }}
-          zIndex={2}
+          z={2}
         />
       </Box>
     </div>
