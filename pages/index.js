@@ -19,7 +19,8 @@ export default function Home() {
         <Text w='80%'>
           I&apos;m an indie Web Devloper based in Orange County. Currently I am
           focused on learning more about the Web. I also started drawing when
-          I&apos;m not studying or deep in rabbit holes of text.
+          I&apos;m not studying or deep in the rabbit holes of text. Other than
+          that, travelling is also something I enjoy.
         </Text>
         <Text w='80%' pt={2}>
           I often use <b>React (Javascript/Typescript)</b> and <b>NodeJS</b> for
