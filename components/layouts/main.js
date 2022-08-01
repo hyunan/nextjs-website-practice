@@ -11,6 +11,11 @@ const Banner = dynamic(() => import('../banner'), {
 export default function MainContainer({ children }) {
   return (
     <Box as='main' bg={useColorModeValue('yellow.50', '#252736')}>
+      <Head>
+        <title>Ray An</title>
+        <meta name='description' content="I'm a Web Developer and student." />
+        <meta property='og:image' content='/images/profile.png' />
+      </Head>
       <Navbar />
       <Banner />
       <Container maxW='container.md' pt={2}>
