@@ -40,7 +40,7 @@ const Projects = () => {
             imgSrc='/images/lofistation.png'
             projectTitle='Online Lofi Music Player'
             stackInfo='React.js'
-            href='https://lofi-station.herokuapp.com/'
+            href='/lofi'
             source='https://github.com/hyun-an/lofistation'
             show={true}
           />

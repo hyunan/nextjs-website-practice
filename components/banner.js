@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect, useRef } from 'react'
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import * as THREE from 'three'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 

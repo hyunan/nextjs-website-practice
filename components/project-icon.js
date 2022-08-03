@@ -11,7 +11,7 @@ const ProjectIcon = ({
   return (
     <Box pt={2} pb={2}>
       <Box display='flex' justifyContent='center'>
-        <Link href={href} target='_blank'>
+        <Link href={href}>
           <Image
             src={imgSrc}
             alt='imgsrc'
@@ -21,7 +21,7 @@ const ProjectIcon = ({
           />
         </Link>
       </Box>
-      <Box ml={{ base: '65px', md: 6 }} pt={1}>
+      <Box ml={{ base: '60px', md: 6 }} pt={1}>
         <Text fontWeight='semibold'>
           {projectTitle}{' '}
           {show ? (

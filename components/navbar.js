@@ -73,9 +73,8 @@ const Navbar = () => {
           ml={4}
         >
           <LinkItem href='/projects'>Projects</LinkItem>
-          <LinkItem href='https://github.com/hyun-an/hyunan'>
-            <IoLogoGithub style={{ marginRight: '0.5rem' }} />
-            Source
+          <LinkItem href='/more' passHref>
+            More
           </LinkItem>
         </Stack>
         <Box alignContent='right'>
@@ -106,21 +105,19 @@ const Navbar = () => {
                     </Text>
                   </MenuItem>
                 </LinkItem>
-                <LinkItem href='https://github.com/hyun-an/hyunan' passHref>
+                <LinkItem href='/more' passHref>
                   <MenuItem
                     as={Link}
                     _hover={{
                       outlineColor: '#51bae0'
                     }}
                   >
-                    <IoLogoGithub />
                     <Text
-                      ml={1}
                       _hover={{
                         textUnderlineOffset: '-0.5rem'
                       }}
                     >
-                      Source
+                      More
                     </Text>
                   </MenuItem>
                 </LinkItem>
