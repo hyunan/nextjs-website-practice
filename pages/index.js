@@ -17,16 +17,15 @@ export default function Home() {
           Hello! I&apos;m Ray
         </Text>
         <Text w='80%'>
-          I&apos;m an indie Web Devloper based in Orange County. Currently I am
-          focused on learning more about the Web. I also started drawing when
-          I&apos;m not studying or deep in the rabbit holes of text. Other than
-          that, travelling is also something I enjoy.
+          I&apos;m a Web Devloper based in Orange County. Currently I am focused
+          on learning more about the Web. I enjoy learning and creating new
+          things.
         </Text>
         <Text w='80%' pt={2}>
           I often use <b>React (Javascript/Typescript)</b> and <b>NodeJS</b> for
           my websites and <b>React Native</b> for mobile. I also know{' '}
-          <b>Java</b> and a bit of <b>Python</b>, but still prefer
-          Javascript&apos;s warm embrace of errors.
+          <b>Java</b> and <b>Python</b>, but still prefer Javascript&apos;s warm
+          embrace of errors.
         </Text>
         <Text fontWeight='bold' pt={4}>
           Other tech I use:

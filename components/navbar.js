@@ -12,12 +12,12 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { IoMenuOutline, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 import NLink from 'next/link'
 import Logo from './logo'
 import ThemeToggle from './theme-toggle'
 import { HamburgerIcon } from '@chakra-ui/icons'
-//#51bae0
+
 const LinkItem = ({ href, children }) => {
   return (
     <NLink href={String(href)} passHref>
@@ -62,7 +62,11 @@ const Navbar = () => {
         justifyContent='space-between'
         alignItems='center'
       >
-        <Logo as='h1' />
+        <NLink href='/'>
+          <a>
+            <Logo />
+          </a>
+        </NLink>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -73,8 +77,9 @@ const Navbar = () => {
           ml={4}
         >
           <LinkItem href='/projects'>Projects</LinkItem>
-          <LinkItem href='/more' passHref>
-            More
+          <LinkItem href='https://github.com/hyun-an' passHref>
+            <IoLogoGithub />
+            <Text pl={1}>Github</Text>
           </LinkItem>
         </Stack>
         <Box alignContent='right'>
@@ -105,7 +110,7 @@ const Navbar = () => {
                     </Text>
                   </MenuItem>
                 </LinkItem>
-                <LinkItem href='/more' passHref>
+                <LinkItem href='https://github.com/hyun-an' passHref>
                   <MenuItem
                     as={Link}
                     _hover={{
@@ -116,8 +121,12 @@ const Navbar = () => {
                       _hover={{
                         textUnderlineOffset: '-0.5rem'
                       }}
+                      display='flex'
+                      alignItems='center'
+                      justifyContent='space-between'
                     >
-                      More
+                      <IoLogoGithub />
+                      Github
                     </Text>
                   </MenuItem>
                 </LinkItem>
