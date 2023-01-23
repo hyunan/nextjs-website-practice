@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  HStack,
   IconButton,
   Link,
   Menu,
@@ -12,7 +11,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { IoMenuOutline, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 import NLink from 'next/link'
 import Logo from './logo'
 import ThemeToggle from './theme-toggle'
@@ -24,10 +23,6 @@ const LinkItem = ({ href, children }) => {
       <Link
         fontWeight='medium'
         p={{ base: 'none', md: '2' }}
-        _hover={{
-          outlineColor: '#51bae0',
-          textDecoration: 'underline'
-        }}
         display='flex'
         alignItems='center'
       >
@@ -46,7 +41,7 @@ const Navbar = () => {
       h={14}
       bgColor={useColorModeValue(
         'rgba(255, 255, 240, 0.5)',
-        'rgba(37, 39, 54, 0.5)'
+        'rgba(25, 25, 25, 0.5)'
       )}
       backdropFilter='auto'
       backdropBlur='2px'
@@ -90,6 +85,22 @@ const Navbar = () => {
                 aria-label='Options'
               />
               <MenuList>
+                <LinkItem href='/' passHref>
+                  <MenuItem
+                    as={Link}
+                    _hover={{
+                      outlineColor: '#51bae0'
+                    }}
+                  >
+                    <Text
+                      _hover={{
+                        textUnderlineOffset: '-0.5rem'
+                      }}
+                    >
+                      Some more stuff
+                    </Text>
+                  </MenuItem>
+                </LinkItem>
                 <LinkItem href='/projects' passHref>
                   <MenuItem
                     as={Link}

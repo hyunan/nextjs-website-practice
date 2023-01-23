@@ -10,7 +10,7 @@ const Footer = () => {
       justifyContent='center'
     >
       <Text color={useColorModeValue('gray.700', 'whiteAplha.300')}>
-        &copy; {new Date().getFullYear()} Ray An :)
+        Made by me :)
       </Text>
     </Box>
   )

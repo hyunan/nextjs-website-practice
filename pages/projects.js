@@ -1,20 +1,13 @@
-import {
-  Box,
-  Text,
-  UnorderedList,
-  ListItem,
-  SimpleGrid
-} from '@chakra-ui/react'
-import Link from 'next/link'
+import { Box, Text, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/ani-page'
 import ProjectIcon from '../components/project-icon'
 
 const Projects = () => {
   return (
     <Layout>
-      <Box pt={12} pb={16}>
+      <Box pt={16} h={{ base: '230vh', md: '140vh' }}>
         <Text fontWeight='bold' fontSize='3xl' pb={4}>
-          Personal projects
+          My projects
         </Text>
         <SimpleGrid columns={{ base: 1, md: 2 }}>
           <ProjectIcon
@@ -31,11 +24,6 @@ const Projects = () => {
             source='https://github.com/hyun-an/fancy-todolist'
             show={true}
           />
-        </SimpleGrid>
-        <Text fontWeight='bold' fontSize='3xl' pt={4} pb={4}>
-          Old projects
-        </Text>
-        <SimpleGrid columns={{ base: 1, md: 2 }}>
           <ProjectIcon
             imgSrc='/images/lofistation.png'
             projectTitle='Online Lofi Music Player'
@@ -51,11 +39,6 @@ const Projects = () => {
             source='https://github.com/hyun-an/asscii-ani'
             show={true}
           />
-        </SimpleGrid>
-        <Text fontWeight='bold' fontSize='3xl' pt={4} pb={4}>
-          Collab Works
-        </Text>
-        <SimpleGrid columns={{ base: 1, md: 2 }}>
           <ProjectIcon
             imgSrc='/images/aistory.png'
             projectTitle='AI Story'
