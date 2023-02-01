@@ -7,7 +7,11 @@ const Projects = () => {
     <Layout>
       <Box pt={16} h={{ base: '230vh', md: '140vh' }}>
         <Text fontWeight='bold' fontSize='3xl' pb={4}>
-          My projects
+          My recent projects
+        </Text>
+        <Text fontWeight='light' fontSize='1xl' pb={4}>
+          Project demos will not work due to Heroku changing their
+          services&apos; term.
         </Text>
         <SimpleGrid columns={{ base: 1, md: 2 }}>
           <ProjectIcon

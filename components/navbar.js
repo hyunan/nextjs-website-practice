@@ -68,9 +68,9 @@ const Navbar = () => {
           ml={4}
         >
           <LinkItem href='/projects'>Projects</LinkItem>
-          <LinkItem href='https://github.com/hyun-an/hyunan'>
+          <LinkItem href='https://github.com/hyun-an/'>
             <IoLogoGithub style={{ marginRight: '0.5rem' }} />
-            Source
+            Github
           </LinkItem>
         </Stack>
         <Box alignContent='right'>
@@ -97,7 +97,7 @@ const Navbar = () => {
                         textUnderlineOffset: '-0.5rem'
                       }}
                     >
-                      Some more stuff
+                      Main page
                     </Text>
                   </MenuItem>
                 </LinkItem>
@@ -131,7 +131,7 @@ const Navbar = () => {
                         textUnderlineOffset: '-0.5rem'
                       }}
                     >
-                      Source
+                      Github
                     </Text>
                   </MenuItem>
                 </LinkItem>
